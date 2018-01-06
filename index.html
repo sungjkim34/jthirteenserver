@@ -1,0 +1,26 @@
+<html>
+    <head>
+      <title>A Multiplayer Game</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+      <style>
+        canvas {
+          width: 800px;
+          height: 600px;
+          border: 5px solid black;
+        }
+      </style>
+      <!-- <script src="/socket.io/socket.io.js"></script> -->
+    </head>
+    <body>
+      <div>
+        Current Number of Players: <span id="numOfPlayers"></span>
+      </div>
+      <canvas id="canvas"></canvas>
+      <div style="margin-top:5px">
+        <button type="button" class="btn btn-success" id="startBtn" disabled>Start</button>
+      </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/static/game.js"></script>
+  </html>
